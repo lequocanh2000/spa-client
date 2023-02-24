@@ -1,0 +1,15 @@
+/* Footer css */
+.footer-admin__copycript{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-admin__copycript-text{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--primary-color);
+    padding: 12px 0;
+}

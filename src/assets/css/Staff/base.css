@@ -1,0 +1,361 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --height-header: 70px;
+    --pink-light-color: #f7f6ed;
+    --primary-color: #b1a684;
+    /* --width-sidebar: 270px; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;     /*font-size 100% = 16px -> 62.5% = 10px = 1rem*/
+    line-height: 1.6rem;            
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* crollbar css */
+::-webkit-scrollbar {
+    background-color:#fff;
+    border-radius: 10px;
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color); 
+    border-radius: 10px;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+
+
+.btn{
+    border: none;
+    padding: 8px 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    transition: ease-out 0.25s;
+    cursor: pointer;
+    min-width: 64px;
+    /* border: 2px solid var(--primary-color); */
+}
+
+.btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+    
+}
+
+.btn-edit{
+    margin-right: 8px;
+}
+.btn-add{
+    margin-right: 8px;
+}
+
+.main-staff{
+    background-color: #fff;
+}
+
+/* Modal CSS  */
+.modal.open{
+    display: flex;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal__dialog{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 640px;
+    width:100%;
+    background-color: #b1a684;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    color: #000;
+    overflow: hidden;
+    animation: fade ease-out 0.4s;
+}
+
+@keyframes fade {
+    from{
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal__heading{
+    padding: 16px;
+}
+
+.modal__heading-text{
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.modal__body{
+    max-height: 500px;
+    padding: 12px 72px 36px;
+}
+
+.modal__label{
+    display: block;
+    min-width: 136px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.modal__detail{
+    display: flex;
+    padding-bottom: 16px;
+}
+
+.modal__detail-info{
+    margin-left: 16px;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.modal__control{
+    width: 100%;
+    padding: 4px 8px;
+    margin: 4px 0 16px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #b1a684;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+}
+.modal__control:focus{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.modal__select{
+    width: 100%;
+    padding: 8px 12px;
+    margin: 4px 0 16px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #b1a684;
+    outline: none;
+
+}
+
+.modal__checkbox{
+    background-color: #fff;
+    max-height: 188px;
+    overflow-y: scroll;
+    margin: 4px 0 16px;
+    /* border-radius: 3px; */
+}
+
+.modal__checkbox-item{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.modal__checkbox-item .modal__label{
+    color: var(--primary-color);
+}
+
+.modal__checkbox-item .modal__control{
+    margin: 0;
+    width: 40px;
+}
+.modal__checkbox-item .modal__control:focus{
+    box-shadow: none;
+}
+
+.modal__footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.modal__btn{
+    max-width: 120px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    transition: linear 0.15s;
+}
+
+.modal__detail-list{
+    display: block;
+    list-style-type: none;
+    margin: 8px;    
+    max-height: 150px;
+    overflow-y: scroll;
+    padding-left: 24px;
+}
+
+.modal__detail-item{
+    display: flex;
+    padding: 4px 0;
+    padding-right: 16px;
+}
+
+.modal__detail-item-name{
+    font-size: 1.6rem;
+    color:#fff;
+    min-width: 142px;
+}
+
+.modal__detail-item-status{
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+
+/* content card of Staff  */
+.content__card{
+    padding: 40px 0;
+    margin-top: 52px;
+    box-shadow: 0 0 4px 2px #e2e2e2;
+    border-radius: 20px;
+    /* background-color: var(--primary-color); */
+}
+
+.content__card-title{
+    display: flex;
+    justify-content: center; 
+}
+
+.content__card-text{
+    padding-bottom: 40px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    /* color: #fff; */
+}
+
+.content__card-body{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content__card-body-wrapper{
+    min-height: 360px;
+    /* overflow-x: scroll; */
+}
+
+.content__card-body-heading{
+    margin-bottom: 8px;
+}
+
+.content__card-table{
+    box-shadow: 0 0 2px 1px #ccc;
+    overflow: hidden;
+}
+
+.content__card-body-avatar{
+    height: 200px;
+    width: 200px;
+    margin: 8px 0;
+    padding: 8px 16px 0;
+}
+
+.content__card-body-img{
+    width: 100%;
+}
+
+.content__card-body-img-size{
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--primary-color);
+}
+
+.content__card-body-info{
+    max-width: 340px;
+    padding: 0 16px;
+}
+
+.content__card-body-info-item{
+    display: flex;
+    margin: 8px 0;
+}
+
+.content__card-body-info-label{
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--primary-color);
+    min-width: 150px;
+}
+
+.content__card-body-info-text{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--primary-color);
+}
+
+.no-flex{
+    display: block;
+}
+
+.height-auto{
+    height: auto !important;
+}
+
+.max-width800{
+    max-width: 800px;
+}

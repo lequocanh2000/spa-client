@@ -1,0 +1,138 @@
+/* 
+moblie < 740
+740 <= tablet > 1024
+PC >= 1024 */
+
+
+
+/* mobile  */
+@media (max-width: 739px) {
+    :root{
+        --height-header: 52px;
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .header{
+        overflow: hidden;
+    }
+
+    .header__logo{
+        display: none;
+    }
+
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .slider__headding {
+        font-size: 2.6rem;
+        line-height: 1.4;
+    }
+
+    .slider__title{
+        font-size: 2.6rem;
+        margin: 0px 0;
+        line-height: 1.4;
+    }
+    .slider__text{
+        font-size: 1.2rem;
+        line-height: 1.4;
+    }
+
+    /* index.html > services, services-famous, invitation */
+    .service,.services-famous ,.invitation{
+        padding: 0 52px;
+    }
+
+    .contact__btn-form{
+        width: 100%;
+    }
+
+    .customer__comment{
+        padding: 0 16px;
+        text-align: justify;
+    }
+
+    /* introduce.html  */
+    .about__wrapper{
+        padding-top: 12px;
+    }
+
+    .staff_wrapper{
+        padding: 0;
+    }
+
+
+    /* Footer css  */
+    .footer__heading {
+        padding: 0 16px;
+    }
+
+    /* News css  */
+    .sidebar-news{
+        padding: 16px;
+    }
+
+    .sidebar-news::after{
+        display: none;
+    }
+
+    .news{
+        padding: 0;
+    }
+
+    .news__card{
+        margin: 0;
+    }
+
+    
+    .footer__heading-text{
+        margin-right: 0px;
+    }
+
+    .footer__heading-contact, .footer__heading-detail{
+        margin-left: 0px;
+    }
+
+    .modal__body {
+        padding: 12px;
+    }
+}
+
+/* tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+    :root{
+        --height-header: 52px;
+    }
+
+    .show-on-mobile {
+        display: block;
+    }
+
+    .header{
+        overflow: hidden;
+    }
+
+    .header__logo{
+        display: none;
+    }
+
+    .nav{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav__link{
+        padding: 0px 12px;
+    }
+    
+}
+
+/* pc  */
+@media (min-width: 1024px) {
+    
+}

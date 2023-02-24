@@ -1,0 +1,23 @@
+/* Information Spa CSS */
+/* quantity css */
+.quantity{
+    text-align: center;
+}
+
+.quantity__warpper{
+    padding-bottom: 36px;
+}
+
+.quantity__number{
+    font-size: 4.8rem;
+    font-weight: 400;
+    color: #5f5842;
+    line-height: 1.4;
+}
+
+.quantity__text{
+    font-size: 1.6rem;
+    color:#b1a684;
+    line-height: 1.4;
+    text-transform: uppercase;
+}

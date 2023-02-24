@@ -1,0 +1,49 @@
+/* 
+moblie < 740
+740 <= tablet > 1024
+PC >= 1024 */
+
+
+
+/* mobile  */
+@media (max-width: 739px) {
+    /* modal css  */
+    .modal__body {
+        padding: 12px;
+    }
+
+
+    .header-staff__nav{
+        display: block;
+    }
+
+    .header-staff__body-btn{
+        display: block;
+    }
+
+    .content__card-body-wrapper{
+        overflow-x: scroll;
+    }
+
+    .btn-add{
+        margin-bottom: 8px;
+    }
+
+    .modal__body{
+        overflow-y: scroll;
+    }
+
+
+}
+
+/* tablet  */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .btn-add{
+        margin-bottom: 8px;
+    }
+}
+
+/* pc  */
+@media (min-width: 1024px) {
+   
+}

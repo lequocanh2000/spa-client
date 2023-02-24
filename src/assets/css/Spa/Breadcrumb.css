@@ -1,0 +1,68 @@
+/* Breadcrumb CSS */
+.breadcrumb{
+    position: relative;
+    margin-top: var(--height-header);
+    max-height: 200px;
+    height: 200px;
+}
+
+.breadcrumb::before{
+    content: "";
+    background: url('../../img/introduce/title.jpg') no-repeat top / cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+
+
+.breadcrumb__wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.breadcrumb__wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.3;
+}
+
+.breadcrumb__wrapper-child{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: uppercase;
+}
+
+.breadcrumb__headding{
+    font-size: 2.8rem;
+    
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.breadcrumb__link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-right: 8px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.breadcrumb__link:last-child{
+    font-weight: 600;
+}

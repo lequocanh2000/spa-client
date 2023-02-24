@@ -1,0 +1,61 @@
+/* Information staff CSS  */
+/* Section CSS  */
+.section{
+    padding:60px 0;
+}
+
+.section__heading{
+    text-align: center;
+    color: #b1a684;
+    font-size: 4rem;   
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    line-height: 1.4
+    
+}
+.section__title{
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 16px 0;
+    color: #b1a684;
+    text-transform: uppercase;
+    line-height: 1.4
+}
+
+/* staff CSS  */
+.staff{
+    margin-top: 36px;
+}
+.staff_wrapper{
+    padding: 0 12px;
+}
+.staff__img{
+    width: 100%;
+}
+.staff__body{
+    padding: 24px 20px;
+    background-color: #fff;
+}
+
+.staff__name{
+    font-size: 2.6rem;
+    font-weight: 400;
+    color: #5f5842;
+    line-height: 1.4;
+}
+
+.staff__marjor{
+    margin: 16px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #b1a684;
+    line-height: 1.4;
+}
+
+.staff__time{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #353535;
+    padding-bottom: 16px;
+}
+

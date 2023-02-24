@@ -1,0 +1,48 @@
+/*Slider CSS  */
+.slider{
+    margin-top: var(--height-header);
+    padding-top: 50%;
+    background-size: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.slider::before{
+    content: "";
+    background: url('http://mauweb.monamedia.net/helenspa/wp-content/uploads/2019/06/slide-2.jpg') no-repeat top / cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.4;
+}
+
+.slider__wrapper{
+    max-width: 860px;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.slider__headding{
+    font-size: 4.8rem;
+    font-family: 'Great Vibes', cursive;
+    line-height: 1.4;
+}
+
+.slider__title{
+    font-size: 4.6rem;
+    margin: 16px 0;
+    color: #ec006c;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.slider__text{
+    font-size: 1.6rem;
+    color: #333;
+    line-height: 1.6;
+}

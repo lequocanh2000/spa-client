@@ -1,0 +1,39 @@
+/* Descriptions CSS*/
+.card__heading{
+    padding: 44px 0;
+}
+
+.card__heading-icon{
+    font-size: 8.8rem;
+    padding-right: 28px;
+}
+
+.card__heading-icon.ti-support{
+    color: #16bbe5;
+}
+
+.card__heading-icon.ti-face-smile{
+    color: #ea5d5d;
+}
+
+.card__heading-icon.ti-map-alt{
+    color: #fcad73;
+}
+
+.card__heading-icon.ti-user{
+    color: #2daab8;
+}
+
+.card__quantity{
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+    color: var(--primary-color);
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.card__title{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    color: #b7bcc4;
+}

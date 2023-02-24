@@ -1,0 +1,10 @@
+/* content__heading CSS */
+.content__heading{
+    margin-top: var(--height-header);
+    padding: 28px 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-transform: uppercase;
+}

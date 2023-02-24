@@ -1,0 +1,47 @@
+/* invitation CSS  */
+
+.bg-pink-strong{
+    background-color: #f2ebd6;
+}
+
+
+.invitation{
+    text-align: center;
+}
+
+.invitation__heading{
+    margin-top: 32px;
+}
+
+.invitation__img{
+    width: 55px;
+}
+
+.invitation__name{
+    font-size: 24px;
+    color: #5f5842;
+    margin: 20px 0 32px 0;
+    position: relative;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.invitation__name::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    bottom: -50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: #5f5842;
+}
+
+.invitation__description{
+    font-size: 16px;
+    color: #5f5842;
+    margin: 16px 0;
+    line-height: 1.4;
+    padding: 0 16px;
+}

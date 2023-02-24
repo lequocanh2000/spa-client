@@ -1,0 +1,253 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --height-header: 70px;
+    --pink-light-color: #f7f6ed;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;     /*font-size 100% = 16px -> 62.5% = 10px = 1rem*/
+    line-height: 1.6rem;            
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Padding and margin  */
+.mgb-30{
+    margin-bottom: 30px;
+}
+
+.pl-12{
+    padding-left: 12px;
+}
+.pr-12{
+    padding-right: 12px;
+}
+.pt-60{
+    padding-top: 60px;
+}
+.pt-60{
+    padding-bottom: 60px;
+}
+
+.row.gutter-8 {
+    margin: 0 -8px;
+}
+
+.row.gutter-8 .col {
+    padding:0 8px;
+}
+
+.btn{
+    min-width: 100px;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.main{
+    position: relative;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.bg-pink-light{
+    background-color: var(--pink-light-color);
+}
+
+.bg-pink-strong{
+    background-color: #f2ebd6;
+}
+
+/* Button open modal CSS */
+.nav__link-btn-modal{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/* Modal CSS  */
+.modal.open{
+    display: flex;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+
+
+.modal__dialog{
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    max-width: 640px;
+    width:100%;
+    background-color: #b1a684;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2);
+    color: #000;
+    overflow: hidden;
+    animation: fade ease-out 0.4s;
+}
+
+@keyframes fade {
+    from{
+        transform: translateY(-30%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal__heading{
+    padding: 16px;
+}
+
+.modal__heading-text{
+    font-size: 3.2rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.modal__detail-info{
+    margin-left: 16px;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.modal__label{
+    display: block;
+    min-width: 136px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #fff;
+}
+
+.modal__body{
+    max-height: 500px;
+    padding: 12px 72px 36px;
+}
+
+.modal__detail{
+    display: flex;
+}
+
+.modal__control{
+    width: 100%;
+    padding: 4px 8px;
+    margin: 4px 0 16px 0;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    color: #b1a684;
+    font-size: 1.6rem;
+    line-height: 1.6;
+
+}
+.modal__control:focus{
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.modal__select{
+    width: 100%;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #b1a684;
+    outline: none;
+}
+
+.modal__footer{
+    background-color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+.modal__btn{
+    max-width: 120px;
+    margin: 0 8px;
+    text-transform: uppercase;
+    transition: linear 0.15s;
+}
+
+.btn--green{
+    font-weight: 600;
+    --green-color: #349139;
+    border: 2px solid var(--green-color);
+    background-color: #fff;
+    color: var(--green-color);
+}
+
+.btn--red{
+    font-weight: 600;
+    --red-color: #823030;
+    border: 2px solid var(--red-color);
+    background-color: #fff;
+    color: var(--red-color);
+}
+
+.btn--green:hover{
+    background-color: var(--green-color);
+    color: #fff;
+    opacity: 0.8;
+}
+.btn--red:hover{
+    background-color: var(--red-color);
+    color: #fff;
+    opacity: 0.8;
+}
+
+.section{
+    padding:60px 0;
+}
+
+.section__heading{
+    text-align: center;
+    color: #b1a684;
+    font-size: 4rem;   
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    line-height: 1.4
+    
+}
+.section__title{
+    font-size: 3.2rem;
+    text-align: center;
+    margin: 16px 0;
+    color: #b1a684;
+    text-transform: uppercase;
+    line-height: 1.4
+}

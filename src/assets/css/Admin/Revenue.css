@@ -1,0 +1,35 @@
+.card-table__heading-year-revenue{
+    display: flex;
+    align-items: center;
+}
+
+.card-table__heading-year-revenue-label{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--primary-color);
+    margin-right: 16px;
+}
+
+.card-table__heading-year-revenue-select{
+    width: 100px;
+    height: 30px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.card-table__total-revenue{
+    position: absolute;
+    bottom:20px;
+}
+
+.card-table__total-revenue-text,.card-table__total-revenue-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #000;
+    margin-right: 16px;
+}
+

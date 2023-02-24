@@ -1,0 +1,31 @@
+/* Customer CSS */
+.customer{
+    text-align: center;
+    color: #5f5842;
+}
+
+.customer__comment{
+    margin: 30px 0 12px 0;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    
+}
+
+.customer__img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.customer__name{
+    margin-bottom: 12px;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 1.6;   
+}
+
+.customer__text{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    font-style: italic;
+}

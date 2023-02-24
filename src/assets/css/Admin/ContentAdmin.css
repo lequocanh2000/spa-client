@@ -1,0 +1,12 @@
+/* Content css */
+.content-admin{
+    min-height: 100vh;
+    width: calc(100% - var(--width-sidebar));
+    margin-left: var(--width-sidebar);
+    transition: linear 0.25s;
+}
+
+/* Container css */
+.container{
+    margin: 16px 16px 0;
+}

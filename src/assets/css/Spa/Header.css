@@ -1,0 +1,79 @@
+/*Header CSS*/
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: var(--height-header);
+    background-color: var(--white-color);
+    box-shadow: 0 0px 10px 4px rgb(0, 0, 0, 0.12);
+    z-index: 1;
+    
+}
+
+.header__body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{
+    width: 240px;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-image{
+    width: 60%;
+}
+
+.nav{
+    flex-shrink: 1;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav__item:hover .nav__link{
+    color: #9fdef4;
+}
+
+.nav__item:last-child .nav__link{
+    padding-right: 0;
+}
+
+.nav__link{
+    display: block;
+    text-decoration: none;
+    padding:0 20px ;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #6e6854;
+    text-transform: uppercase;
+    line-height: var(--height-header);
+    
+}
+
+/* Button on mobile CSS */
+.header--heigth-auto{
+    height: auto !important;
+}
+
+.show-on-mobile {
+    display: none;
+}
+
+.header__btn-mobile{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    border: none;
+    background-color: #fff;
+    padding: 16px 16px;
+}
+
+.header__btn-mobile:hover{
+    color: #9fdef4;
+}
+
+.header__icon-mobile {
+    font-size: 16px;
+}

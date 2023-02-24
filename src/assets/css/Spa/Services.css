@@ -1,0 +1,60 @@
+/* services CSS */
+.bg-pink-light{
+    background-color: #f7f6ed;
+}
+
+.services__heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.services__circle{
+    width: 200px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear 0.2s;
+}
+
+.services__circle:hover{
+    box-shadow: 0 0 30px 20px rgb(0, 0, 0, 0.05);
+}
+
+
+.services__img{
+    width: 90px;
+}
+
+
+.services__name{
+    font-size: 2.6rem;
+    padding: 40px 0 30px 0;
+    text-align: center;
+    color: #5f5842;
+    position: relative;
+}
+.services__name::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 1px;
+    background-color: #5f5842;
+}
+
+.services__description{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #5f5842;
+    line-height: 1.6;
+    margin-top: 20px;
+    padding: 0 16px;
+}
